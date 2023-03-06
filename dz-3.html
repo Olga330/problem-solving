@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-4</title>
+</head>
+<body>
+    <script> 
+       let str = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit .  '+  
+                  'Ab optio ut error labore nostrum reprehenderit aspernatur , '  + 
+                  'et ad , ipsum quaerat voluptatibus dignissimos similique , ' +
+                  'deleniti minus quam , alias corporis dolore blanditiis , ' +
+                  'Ut enim ad minima veniam , quis nostrum exercitationem ullam ' +
+                  'corporis suscipit laboriosam , nisi ut aliquid ex ea commodi ' +
+                  'consequatur . Quis autem vel eum iure reprehenderit qui in ea ' +
+                  'voluptate velit esse quam nihil molestiae consequatur . Vel illum ' +
+                  'qui dolorem eum fugiat quo voluptas nulla pariatur !';
+
+        let zad_1 = str.split(' ');
+        console.log('zad_1:', zad_1);
+
+        let arr = [];
+        for(let i = 0; i < zad_1.length; i++) {  
+            if (zad_1[i].includes('a') == true) {
+                arr.push(zad_1[i]);
+            }  
+        }
+        for(let j = 0; j < arr.length; j++) {
+            console.log(arr[j]);
+        }  
+
+        let zad_2 =``;
+        for(let b = 0; b < arr.length; b++) {
+            zad_2+=`${arr[b]} `;
+        }
+        console.log('zad_2:', zad_2);
+
+
+    </script>
+</body>
+</html>
