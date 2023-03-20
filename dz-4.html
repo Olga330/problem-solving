@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>дз</title>
+</head>
+<body>
+<script>
+let nameUser=prompt('Здравствуйте, как вас зовут?', 'Введите ваше ФИО');
+ console.log('nameUser: ', nameUser )
+
+function gender(nameUser){
+            let end_index = nameUser.length - 1; 
+            let pre_end_index = end_index - 1; 
+            let last_symbols = (nameUser[pre_end_index] + nameUser[end_index]).toUpperCase(); 
+            let gender; 
+
+            if (last_symbols == 'ИЧ') {
+                gender = 'М' ; 
+            } else if (last_symbols == 'ЛЫ') {
+                gender : 'М';
+            } else if (last_symbols == 'НА') {
+                gender = 'Ж'; 
+            } else if (last_symbols == 'ЗЫ') {
+                gender = 'Ж' ; 
+            }        
+          return gender;
+          }
+
+          let g = gender(nameUser);
+        console.log('gender=',g); 
+
+       
+
+        right=confirm('Ваше авто BMW?')
+        if(right){
+        alert (nameUser+' '+ g +' ' + right )
+        } else if( right=prompt('Ваш автомобиль?')){
+        alert(nameUser+' '+ g +' ' +right );
+      
+        }
+
+console.log('Авто',right);
+
+
+
+</script>
+
+</body>
+</html>  
+
+    
