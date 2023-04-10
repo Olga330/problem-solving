@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объекты</title>
+</head>
+<body>
+    <h1>Объекты</h1>
+
+    <script>
+        let employees = {
+          "emp_no": '01',
+             "salaries": [
+                {
+                    "salary": "30578",
+                    "from_date": "2001-07-30",
+                    "to_date": "2002-07-30"
+                },
+                {
+                   
+                    "salary": "43567",
+                    "from_date": "2007-07-30",
+                    "to_date": "2009-06-25"
+                },
+                {
+                    "salary": "41367",
+                    "from_date": "2010-07-30",
+                    "to_date": "2012-07-30"
+                },
+               
+             ]}
+             let arr_salaries = employees.salaries.map((item, index, array) => {
+                    return item.salary
+                })
+            
+            let arr_salary = arr_salaries.map((item,index,array) => {
+                    return (''+item).split("")
+            })
+
+            let unique_num = [];
+
+           for (let i = 0; i< arr_salary.length; i++) {
+              unique_num[i] = arr_salary[i].reduce((sum, item, index, array) => {
+                    return (+sum) + (+item);
+               });
+          }
+           
+            let n = '21';
+
+            alert("Поздравляем");
+           
+            console.log(unique_num);
+    </script>
+</body>
+</html>
